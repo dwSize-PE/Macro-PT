@@ -47,11 +47,11 @@ void Variacao()
 			}
 
 			//Loop dos pote
-			for (int i = -1; i < cnt; i++)
+			for (int i = 0; i < 3; i++)
 			{
 				if (currBarra[i] < totalBarra[i] / 2)
 				{
-					SendMsg(WM_MOUSEMOVE, 0, MAKELPARAM(posPot[0][i], posPot[i][0]), 100);
+					SendMsg(WM_MOUSEMOVE, 0, MAKELPARAM(potX[i], potY[i]), 100);
 					SendMsg(WM_RBUTTONDOWN, 0, 0, 300);
 					SendMsg(WM_RBUTTONUP, 0, 0, 300);
 				}

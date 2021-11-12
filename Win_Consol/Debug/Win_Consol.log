@@ -1,0 +1,13 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Win_Consol.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Source.cpp
+F:\Leo\Projects 2k21\bPT\ConsoleProject_New\Win_Consol\Source.cpp(22,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+  Generating Code...
+F:\Leo\Projects 2k21\bPT\ConsoleProject_New\Win_Consol\ID_Register.h(40): warning C4715: 'Protect': not all control paths return a value
+  Source.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+Source.obj : error LNK2020: unresolved token (0A000490) "extern "C" int __cdecl _CrtDbgReport(int,char const *,int,char const *,char const *,...)" (?_CrtDbgReport@@$$J0YAHHPBDH00ZZ)
+Source.obj : error LNK2028: unresolved token (0A0005C4) "extern "C" void __cdecl _invalid_parameter(wchar_t const *,wchar_t const *,wchar_t const *,unsigned int,unsigned int)" (?_invalid_parameter@@$$J0YAXPB_W00II@Z) referenced in function "void __cdecl std::_Adjust_manually_vector_aligned(void * &,unsigned int &)" (?_Adjust_manually_vector_aligned@std@@$$FYAXAAPAXAAI@Z)
+Source.obj : error LNK2020: unresolved token (0A0005FA) "extern "C" int __cdecl _CrtDbgReport(int,char const *,int,char const *,char const *,...)" (?_CrtDbgReport@@$$J0YAHHPBDH00ZZ)
+Source.obj : error LNK2001: unresolved external symbol "extern "C" int __cdecl _CrtDbgReport(int,char const *,int,char const *,char const *,...)" (?_CrtDbgReport@@$$J0YAHHPBDH00ZZ)
+Source.obj : error LNK2019: unresolved external symbol "extern "C" void __cdecl _invalid_parameter(wchar_t const *,wchar_t const *,wchar_t const *,unsigned int,unsigned int)" (?_invalid_parameter@@$$J0YAXPB_W00II@Z) referenced in function "void __cdecl std::_Adjust_manually_vector_aligned(void * &,unsigned int &)" (?_Adjust_manually_vector_aligned@std@@$$FYAXAAPAXAAI@Z)
+F:\Leo\Projects 2k21\bPT\ConsoleProject_New\Debug\lokdown.exe : fatal error LNK1120: 5 unresolved externals

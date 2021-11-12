@@ -19,11 +19,11 @@ void Commands()
 		{
 			GetCursorPos(&pos);
 			ScreenToClient(hwndPT, &pos);
-			posPot[0][cnt] = pos.x;
-			posPot[cnt][0] = pos.y;
+			potX[cnt] = pos.x;
+			potY[cnt] = pos.y;
 			cnt++;
-			//if (cnt >= 2)
-				//cnt = 0;
+			if (cnt >= 2)
+				cnt = 0;
 
 			Sleep(200);
 		}

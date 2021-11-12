@@ -46,7 +46,7 @@ int SubLife, HookMana;
 //Hotkeys.h
 bool bMacro, bConfig, bTela;
 int teclas_macro, cnt = 0, cnt2 = 0;
-DWORD tempo_teclas[12], Timex[12], secx[12], posPot[3][3], currBarra[3], totalBarra[3];
+DWORD tempo_teclas[12], Timex[12], secx[12], potX[3], potY[3], currBarra[3], totalBarra[3];
 RECT lpRect;
 POINT pos;
 
