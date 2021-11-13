@@ -10,17 +10,7 @@ void Variacao()
 		if (bMacro)
 		{
 			GetWindowRect(hwndPT, &lpRect);
-			SendMsg(WM_MOUSEMOVE, 0, MAKELPARAM((lpRect.right - lpRect.left) / 2, (lpRect.bottom - lpRect.top) / 2), 700); //Move o mouse para o CenterScreen
 			
-			if (sec >= 57)
-			{
-				SendMsg(WM_MOUSEMOVE, 0, MAKELPARAM((lpRect.right - lpRect.left), lpRect.top, 300));
-				for (int i = 0; i < 10; i++)
-					SendMsg(WM_LBUTTONDOWN);
-				Sleep(100);
-				SendMsg(WM_LBUTTONUP);
-			}
-
 			//Loop das skills
 			for (int i = 0; i < teclas_macro; i++)
 			{
@@ -28,6 +18,8 @@ void Variacao()
 
 				if (secx[i] >= tempo_teclas[i] || cnt2 == 0)
 				{
+					SendMsg(WM_MOUSEMOVE, 0, MAKELPARAM((lpRect.right - lpRect.left) / 2, (lpRect.bottom - lpRect.top) / 2), 300); //Move o mouse para o CenterScreen
+
 					if (tempo_teclas[i] > 0)
 						SendMsg(WM_MOUSEMOVE, 0, MAKELPARAM((lpRect.right - lpRect.left), lpRect.top, 300));
 
@@ -44,6 +36,15 @@ void Variacao()
 					if (i == (teclas_macro - 1))
 						cnt2++;
 				}
+			}
+
+			if (sec >= 54)
+			{
+				SendMsg(WM_MOUSEMOVE, 0, MAKELPARAM((lpRect.right - lpRect.left), lpRect.top, 300));
+				for (int i = 0; i < 10; i++)
+					SendMsg(WM_LBUTTONDOWN);
+				Sleep(100);
+				SendMsg(WM_LBUTTONUP);
 			}
 
 			//Loop dos pote

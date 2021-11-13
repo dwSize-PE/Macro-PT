@@ -5,10 +5,10 @@ void Commands()
 	sec = ((GetTickCount() - Time2) / 1000);
 	Min = ((GetTickCount() - Time) / 1000) / 60;
 	
-	if (Min == 60)
+	if (Min >= 60)
 		Time = GetTickCount();
 
-	if(sec == 60)
+	if(sec >= 60)
 		Time2 = GetTickCount();
 
 	Hour = ((GetTickCount() - Time_2) / 1000) / 60;
@@ -22,8 +22,6 @@ void Commands()
 			potX[cnt] = pos.x;
 			potY[cnt] = pos.y;
 			cnt++;
-			if (cnt >= 2)
-				cnt = 0;
 
 			Sleep(200);
 		}
